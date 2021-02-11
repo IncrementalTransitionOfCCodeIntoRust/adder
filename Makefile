@@ -5,7 +5,7 @@ CC := gcc
 default: all
 
 all:
-	$(CC) $(C_FLAGS) $(C_SOURCES) $(RUST_LIB) -o $(TARGET)
+	$(CC) $(C_SOURCES)-o $(TARGET)
 
 clean:
 	rm -rf $(TARGET) *.o
